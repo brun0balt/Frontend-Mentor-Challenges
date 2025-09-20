@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Dark-Blue-intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+  --Dark-Blue-main-background: hsl(218, 28%, 13%);
+  --Dark-Blue-footer-background: hsl(216, 53%, 9%);
+  --Dark-Blue-testimonials-background: hsl(219, 30%, 18%);
+  --Cyan-inside-call-to-action-gradient: #65e2d9;
+  --Blue-inside-call-to-action-gradient: #339ecc;
+  --Light-Red-error: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+button {
+  background: linear-gradient(
+    90deg,
+    rgba(101, 226, 217, 1) 0%,
+    rgba(51, 158, 204, 1) 35%
+  );
+  padding: 12px 30px;
+  border: none;
+  color: var(--White);
+  font-family: "Raleway", sans-serif;
+  border-radius: 50px;
+  cursor: pointer;
+  max-width: 215px;
+  transition: 0.3s ease;
+  font-size: 16px;
+}
+
+h2 {
+  color: var(--White);
+  font-size: 35px;
+}
+
+p {
+  color: var(--White);
+}
+
+ul {
+  display: flex;
+  gap: 60px;
+  cursor: pointer;
+}
+
+a,
+i {
+  color: var(--White);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover,
+i:hover {
+  color: #65e2d9;
+}
+
+h4 {
+  color: var(--White);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+  background-image: url(../../images/bg-curvy-desktop.svg);
+  background-position: -6600px 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 40px;
+
+  & li {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  width: 650px;
+  margin-bottom: 200px;
+
+  & .img-hero {
+    width: 500px;
+  }
+}
+
+.services {
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+
+  & .service {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    & .one,
+    .two,
+    .three,
+    .four {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+
+      & img {
+        margin-bottom: 20px;
+      }
+
+      & p {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+.productive {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 200px;
+
+  & .about-productive {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h2 {
+      font-size: 40px;
+    }
+
+    & .productive-icon {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      & a {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        color: var(--Cyan-inside-call-to-action-gradient);
+      }
+    }
+  }
+}
+
+.quotes-img {
+  position: absolute;
+  left: 370px;
+  bottom: 1167px;
+}
+
+.comments {
+  margin-bottom: 500px;
+  display: flex;
+  gap: 50px;
+  z-index: 1;
+
+  & .comment {
+    width: 350px;
+    background-color: var(--Dark-Blue-testimonials-background);
+    padding: 25px;
+    border-radius: 5px;
+
+    & .paragraph-comment {
+      margin-bottom: 20px;
+      & p {
+        font-size: 14px;
+      }
+    }
+
+    & .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      & .profile-name {
+        & span {
+          font-size: 14px;
+          color: var(--White);
+        }
+        & p {
+          font-size: 12px;
+        }
+      }
+
+      & .profile-card {
+        & img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+
+.access {
+  z-index: 1;
+  position: absolute;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+  padding: 60px 50px;
+  border-radius: 10px;
+  gap: 30px;
+  bottom: 400px;
+
+  & h2,
+  p {
+    text-align: center;
+  }
+
+  & .offer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  & .error-msg {
+    color: var(--White);
+    margin: -25px 0px 0px 50px;
+    font-size: 12px;
+    color: var(--Light-Red-error);
+    visibility: hidden;
+  }
+
+  & .offer-dado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    & .input {
+      display: flex;
+      gap: 20px;
+
+      & input {
+        border-radius: 25px;
+        border: none;
+        padding: 12px;
+        width: 500px;
+      }
+
+      & input::placeholder {
+        padding-left: 10px;
+        font-family: "Raleway", sans-serif;
+      }
+
+      & input:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  background-color: var(--Dark-Blue-footer-background);
+  width: 100%;
+  padding: 150px 50px;
+
+  & .footer-logo {
+    margin: 0px 0px 40px 80px;
+  }
+
+  & .contacts {
+    display: flex;
+    justify-content: space-around;
+
+    & .location {
+      width: 400px;
+      display: flex;
+      gap: 10px;
+
+      & p {
+        font-size: 14px;
+      }
+
+      & img {
+        width: 13px;
+        height: 18px;
+      }
+    }
+
+    & .phone-email {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      & .phone,
+      .email {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & img {
+          width: 20px;
+          height: 16px;
+        }
+      }
+    }
+
+    & .about-jobs-press-blog {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    & .contactus-terms-privacy {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    & .social-media {
+      display: flex;
+      gap: 30px;
+
+      & i {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border: 1px solid var(--White);
+      }
+    }
+  }
+}

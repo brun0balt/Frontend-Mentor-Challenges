@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grey-900);
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    width: 350px;
+    height: 610px;
+    background-color: var(--Grey-800);
+    border-radius: 18px;
+}
+
+.container .profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.container .profile-photo img{
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+}
+
+.container .informations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .informations h1{
+    font-weight: 700;
+    padding-top: 30px;
+    color: var(--White);
+}
+
+.container .informations .city{
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 7px;
+    color: var(--Green);
+}
+
+.container .informations .profission{
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 24px;
+    color: var(--White);
+}
+
+.container .contacts .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container .contacts .social a{
+    background-color: var(--Grey-700);
+    width: 304px;
+    height: 45px;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.container .contacts .social{
+    padding-top: 26px;
+}
+
+.container .contacts .social a:hover{
+    background-color: var(--Green);
+    transition: 0.5s;
+}

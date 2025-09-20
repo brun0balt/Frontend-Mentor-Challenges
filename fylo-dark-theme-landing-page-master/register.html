@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/form.css"/>
+    <link rel="stylesheet" href="./src/css/responsive.css"/>
+    <script
+      src="https://kit.fontawesome.com/2c11f9e800.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="logo image" class="logo-img" />
+      <div class="sign-in" href="index.html">
+        <a href="" class="sigin-btn">Sign In</a>
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        <i class="fa-solid fa-house"></i>
+      </div>
+    </header>
+
+    <main class="container">
+      <img src="./images/register.png" alt="" />
+      <form action="" class="form">
+        <h2>Sign Up</h2>
+        <div class="input">
+          <label for="name">Name *</label>
+          <input type="text" placeholder=" Your name" class="register-input" />
+          <span class="error-msg">required field *</span>
+        </div>
+
+        <div class="input">
+          <label for="email">E-mail *</label>
+          <input
+            type="email"
+            placeholder="Your e-mail"
+            class="register-input"
+            id="email-register"
+          />
+          <span class="error-msg">please enter a valid email address *</span>
+        </div>
+
+        <div class="input">
+          <label for="password">Password *</label>
+          <input
+            type="password"
+            placeholder="New password"
+            class="register-input"
+          />
+          <span class="error-msg">required field *</span>
+        </div>
+
+        <div class="input">
+          <label for="password">Password Confirmation *</label>
+          <input
+            type="password"
+            placeholder="New password"
+            class="register-input"
+          />
+          <span class="error-msg">required field *</span>
+        </div>
+
+        <button class="register-btn">Sign Up</button>
+      </form>
+    </main>
+    <script src="./src/js/form.js"></script>
+  </body>
+</html>

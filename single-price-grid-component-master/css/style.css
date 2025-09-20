@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Gray);
+    font-family: "Karla", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.community {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 750px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 30px;
+    gap: 10px;
+}
+
+.community h1 {
+    color: var(--Cyan);
+    margin-bottom: 20px;
+}
+
+.community h3 {
+    color: var(--Bright-Yellow);
+}
+
+.community p {
+    color: var(--Grayish-Blue);
+    line-height: 25px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 250px;
+    background-color: var(--Cyan);
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+}
+.value h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.value p {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.value span {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.time {
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--Bright-Yellow);
+    border-radius: 5px;
+}
+
+.btn {
+    color: #fff;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0 , 0, 0.3);
+}
+
+.per-month {
+    font-weight: 200;
+}
+
+.informations {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 375px;
+    height: 250px;
+    background-color: hsl(179, 55%, 53%);;
+    padding-left: 46px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.information h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.information li {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.div {
+    display: flex;
+}

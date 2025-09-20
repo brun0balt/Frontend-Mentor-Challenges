@@ -1,0 +1,27 @@
+@media(max-width: 375px) {
+    body {
+        background: none;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    
+    .container .information .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .container .about .form-submit .btn-submit {
+        left: 85%;
+    }
+
+    .container .about {
+        margin: 70px 50px 70px 0;
+        width: 527px;
+    }
+}

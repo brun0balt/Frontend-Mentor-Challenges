@@ -1,0 +1,51 @@
+@media (max-width: 450px) {
+
+    .container {
+        height: 100vh;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .results {
+        height: 100%;
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+        padding: 20px 20px 40px 20px;
+        gap: 10px;
+    }
+
+    .results p {
+        padding: 0 30px;
+        color: var(--Pale-blue);
+        opacity: 90%;
+    }
+
+    .results h2 {
+        font-size: 20px;
+    }
+
+    .numbers {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .results h1 {
+        font-size: 25px;
+    }
+
+    .summary {
+        width: 100%;
+    }
+
+    .summary a {
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 451px) {
+    body {
+        padding: 20px;
+    }
+}

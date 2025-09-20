@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue-Numbers: hsla(213, 32%, 15%, 0.762);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.container .choice {
+    max-width: 450px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-color: var(--Dark-Blue-Numbers);
+    border-radius: 40px;
+}
+
+.container .choice .star-ilustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--Dark-Blue);
+}
+
+.container .choice .about h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.container .choice .about p {
+    color: var(--Light-Grey);
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+.container .choice .star-ilustration img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.container .choice .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .choice .nav input {
+    border-radius: 50%;
+    background-color: var(--Dark-Blue);
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+    font-size: 16px;
+}
+
+.container .choice .nav input::before {
+    content: attr(data-number);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .choice .nav input:checked {
+    background-color: #fff;
+    color: var(--Orange);
+}
+
+.container .choice .nav input:hover {
+    background-color: var(--Orange);
+    transition: 0.3s;
+}
+
+
+.container .choice .submit {
+    text-align: center;
+    background-color: var(--Orange);
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px 5px;
+}
+
+.container .choice .submit {
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.container .choice .submit:hover {
+    background-color: var(--White);
+    transition: 0.3s;
+}
+
+.container .choice .submit:disabled {
+    opacity: 0.5;
+}
+
+.container .choice .submit:hover:disabled {
+    background-color: var(--Orange);
+    transition: 0.3s;
+    cursor: default;
+}
+
+.container .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 459px;
+    width: 450px;
+    padding: 31px;
+    background-color: var(--Dark-Blue-Numbers);
+    border-radius: 40px;
+    gap: 30px;
+}
+
+.container .result .score {
+    background-color: var(--Dark-Blue);
+    padding: 10px;
+    border-radius: 20px;
+    width: 250px;
+    color: var(--Orange);
+}
+
+.container .result-thank h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.container .result-thank p {
+    margin-top: 10px;
+    font-size: 17px;
+    color: var(--Light-Grey);
+}
+
+.container .result.active {
+    display: flex;
+}
+
+.hidden {
+    display: hidden;
+}
+
+.ativo {
+    display: block;
+}
+
+main.container section.hidden {
+    display: none;
+}
+
+.container .choice .submit:disabled:hover + .baloon-msg {
+    opacity: 1;
+}
+
+.container .choice .a {
+    position: relative;
+}
+
+.container .choice .baloon-msg {
+    position: relative;
+    position: absolute;
+    border-radius: 8px;
+    padding: 12px;
+    color: #ccc;
+    background-color: #660907;
+    text-align: center;
+    width: max-content;
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.container .choice .baloon-msg::after {
+    position: absolute;
+    background-color: #660907;
+    display: block;
+    content: "";
+    width: 15px;
+    aspect-ratio: 1/1;
+    top: 0;
+    transform: rotate(45deg) translate(-50%);
+    left: 50%;
+}

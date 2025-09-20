@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    height: 100vh;
+    background: url(../../images/bg-pattern-desktop.svg) no-repeat center/cover;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+.container .information {
+    flex: 1;
+}
+
+.container .about {
+    margin: 70px 50px 70px 180px;
+    width: 527px;
+}
+
+.container .about img {
+    display: block;
+    margin-bottom: 120px;
+}
+
+.container .about span,
+strong {
+    font-size: 100px;
+    letter-spacing: 15px;
+}
+
+.container .about span {
+    font-weight: 200;
+    color: hsl(0, 36%, 70%);
+}
+
+.container .about strong {
+    font-weight: 400;
+    color: #000;
+}
+
+.container .about p {
+    color: hsl(0, 36%, 70%);
+    line-height: 25px;
+    margin: 30px 0;
+}
+
+.container .about .btn {
+    display: flex;
+    align-items: center;
+}
+
+.container .about .form-submit {
+    position: relative;
+}
+
+.container .about .form-submit .icon-error {
+    display: none;
+    position: absolute;
+    top: 54%;
+    left: 62%;
+}
+
+.container .about .form-submit .btn-submit {
+    top: 35%;
+    left: 70%;
+    position: absolute;
+    width: 91px;
+    height: 55px;
+    background: linear-gradient(90deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 95%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.container .about .error-alert {
+    font-size: 15px;
+    margin: 7px 0 0 25px;
+    color: hsl(0, 93%, 68%);
+    display: none;
+}   
+
+.container .about .form-submit .btn-submit .arrow-img {
+   position: absolute;
+   top: 33%;
+   left: 50%;
+}
+
+.container .about .btn input {
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid hsl(0, 80%, 86%);
+    margin-top: 30px;
+    width: 425px;
+}
+
+.container .ilustration img {
+    height: 100vh;
+}
+
+.container .about .form-submit input.active {
+    border-color: red;
+}
+
+.container .about .form-submit .icon-error.active {
+    display: block;
+}
+
+.container .about .error-alert.active {
+    display: block;
+}

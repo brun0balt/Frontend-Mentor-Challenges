@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Gradient: #ffa399 to #ff4d97;
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+    background-image: url('../images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    font-family: "";
+}
+
+.container {
+    max-width: 1105px;
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    gap: 35px;
+}
+
+.management {
+    margin-bottom: 50px;
+    max-width: 405px;
+    width: 100%;
+    height: 250px;
+    background-color: var(--Dark-Blue);
+    border-radius: 15px;
+    border-top-right-radius: 120px;
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.management img {
+    width: 180px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.icons i img {
+    width: 24px;
+    height: 20px;
+}
+
+.storage {
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    align-self: end;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+    background-color: var(--Dark-Blue);
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.storage p {
+    color: var(--Pale-Blue);
+    font-family: "Raleway", sans-serif;
+}
+
+.storage span {
+    font-weight: 700;
+}
+
+.baloon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    top: -50px;
+    right: 40px;
+}
+
+.baloon::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    border-style: solid;
+    border-width: 20px 10px 0 20px;
+    border-color: white transparent transparent;
+}
+
+
+.baloon p:first-child {
+    color: var(--Very-Dark-Blue);
+    font-size: 50px;
+}
+
+.baloon p {
+    font-family: "Raleway", sans-serif;
+    color: var(--Grayish-Blue);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.loading {
+    width: 100%;
+    height: 25px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 30px;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.degress {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%);
+    border-radius: 30px;
+    padding: 0 3px;
+}
+
+.white-ball {
+    width: 12px;
+    height: 12px;
+    background-color: var(--Pale-Blue);
+    border-radius: 50%;
+}
+
+.dado {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    color: var(--Pale-Blue);
+}

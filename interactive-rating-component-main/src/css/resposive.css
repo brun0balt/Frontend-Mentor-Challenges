@@ -1,0 +1,23 @@
+@media (max-width: 425px) {
+    .container .choice {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .container .choice {
+        max-width: 350px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .container .choice {
+        max-width: 295px;
+        width: 100%;
+    }
+    
+}

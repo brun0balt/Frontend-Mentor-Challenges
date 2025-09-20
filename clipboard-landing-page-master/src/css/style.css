@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --Strong-Cyan: rgb(38, 186, 164);
+    --Light-Blue: rgb(97, 115, 255);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --Footer: hsl(200, 9%, 87%);
+}
+
+body {
+    height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    background-image: url("../../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container h1 {
+    font-size: 3rem;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+}
+
+.container h2 {
+    font-size: 2.6rem;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+}
+
+.container span {
+    font-size: 2rem;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+}
+
+.container p {
+    font-size: 1.3rem;
+    color: var(--Grayish-Blue);
+}
+
+.container .about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 10rem;
+    margin: 10rem 0;
+}
+
+.container .about .logo img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.container .about .history p {
+    padding: 0 60.8rem;
+    margin-top: 2rem;
+}
+
+.container .download-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container .download-buttons .ios {
+    background-color: var(--Strong-Cyan);
+    padding: 1.5rem 3.5rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container .download-buttons .ios:hover {
+    box-shadow: 0px .3rem 1rem rgba(38, 186 , 164, 0.4);
+    transition: 0.3s;
+}
+
+.container .download-buttons .mac {
+    background-color: var(--Light-Blue);
+    padding: 1.5rem 3.5rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container .download-buttons .mac:hover {
+    box-shadow: 0px .3rem 1rem rgba(97, 115 , 255, 0.4);
+    transition: 0.3s;
+}
+
+.container .service .first-service {
+    margin-bottom: 10rem;
+}
+
+.container .service .first-service .about-first-service p {
+    padding: 0 68.7rem;
+    margin: 2rem 0 5rem 0;
+}
+
+.container .service .first-service .service-list {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 75.1rem;
+}
+
+.container .service .first-service .service-list .list-options {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    line-height: 2.5rem;
+    gap: 4rem;
+}
+
+.container .service .first-service .service-list .list-options p {
+    margin-top: -4rem;
+}
+
+.container .service .second-service p {
+    padding: 0 68.2rem;
+    margin: 1rem 0 3rem 0;
+}
+
+.container .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 1rem;
+    margin-bottom: 10rem;
+}
+
+.container .options .first-option, .second-option, .third-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container .options .first-option p, .second-option p, .third-option p {
+    width: 26.6rem;
+}
+
+.container .sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+
+.container .download {
+    margin-bottom: 10rem;
+}
+
+.container .download p {
+    padding: 0 69rem;
+    margin: 2rem 0;
+}
+
+.container .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: var(--Footer);
+    padding: 3rem;
+}
+
+.container .footer .contact {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.container .footer .contact .faqs-contactus {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1.5rem;
+}
+
+.container .footer .contact .privacypolicy-presskit {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1.5rem;
+}
+
+.container .footer .contact a {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.container .footer .contact a:hover {
+    color: var(--Strong-Cyan);
+}
+
+.container .footer .contact img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.container .footer .social {
+    display: flex;
+    gap: 2rem;
+    margin: 0 10rem ;
+}
+
+.container .footer .social a {
+    font-size: 2rem;
+        
+}
+
+.container .footer .social a:hover {
+    color: var(--Strong-Cyan);
+    transition: 0.3s;
+}

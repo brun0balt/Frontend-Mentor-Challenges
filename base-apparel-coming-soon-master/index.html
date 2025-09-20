@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href=".src/css/reset.css">
+  <link rel="stylesheet" href=".src/css/style.css">
+  <link rel="stylesheet" href=".src/css/resposive.css">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="information">
+      <div class="about">
+        <img src="images/logo.svg" alt="">
+        <span>WE'RE<br><strong>COMING<br>SOON</strong></span>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+          up-to-date with announcements and our launch deals.</p>
+        <form class="btn form-submit">
+          <!-- Captura o form em variavel no JS e adiciona o evento de submit -->
+          <input type="email" placeholder="Email Address" id="input">
+          <!-- Fazer Regex email, se recusado vc manipula o dom com JS -->
+          <img class="icon-error" src="images/icon-error.svg" alt="Image error">
+          <button class="btn-submit"><img src="images/icon-arrow.svg" alt="Icon Arrow" class="arrow-img"></button>
+        </form>
+        <p class="error-alert">Please provid a valid email</p>
+      </div>
+    </section>
+    <div class="ilustration">
+      <img src="images/hero-desktop.jpg" alt="">
+    </div>
+  </main>
+
+</body>
+  <script src=".src/js/script.js"></script>
+</html>

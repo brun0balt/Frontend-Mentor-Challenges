@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/resposive.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body>
+  <main class="container">
+    <section class="choice">
+
+      <div class="star-ilustration">
+        <i><img src="images/icon-star.svg" alt=""></i>
+      </div>
+
+      <div class="about">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+      </div>
+
+      <form class="nav">
+        <input type="radio" name="stars" value="1" data-number="1">
+        <input type="radio" name="stars" value="2" data-number="2">
+        <input type="radio" name="stars" value="3" data-number="3">
+        <input type="radio" name="stars" value="4" data-number="4">
+        <input type="radio" name="stars" value="5" data-number="5">
+      </form>
+
+
+      <div class="a">
+        <button class="submit" id="btn" disabled>SUBMIT</button>
+
+        <div class="baloon-msg">select a number</div>
+      </div>
+
+    </section>
+
+    <section class="result hidden">
+      <div class="result-ilustation">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </div>
+
+      <div class="score">
+        <span>You selected <span class="result-data"></span> out of 5</span>
+      </div>
+
+      <div class="result-thank">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+    </section>
+  </main>
+</body>
+
+<!-- <script src="./src/js/script.js"></script> -->
+<script src="./src/js/script2.js"></script>
+
+</html>

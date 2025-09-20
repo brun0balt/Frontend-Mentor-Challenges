@@ -1,0 +1,36 @@
+@media(max-width: 425px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .community, .about, .informations {
+        width: 300px;
+        height: 250px;
+        padding: 16px;
+    }
+
+    .about, .informations {
+        height: 230px;
+    }
+
+    .informations {
+        padding-left: 34px;
+    }
+
+    .community h3 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .community h1 {
+        font-size: 20px;
+    }
+
+    .community p {
+        font-size: 14px;
+    }
+
+    .div {
+        flex-direction: column;
+    }
+}

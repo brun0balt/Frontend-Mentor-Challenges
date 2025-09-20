@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Spartan";
+}
+
+.global-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 518px;
+}
+
+.about h1 {
+    font-size: 60px;
+    color: var(--Very-Dark-Magenta);
+}
+
+.about p {
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.avaliations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 50px;
+    background-color: var(--Light-Grayish-Magenta);
+    gap: 6px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.avaliations.b {
+    margin-left: 50px;
+}
+
+.avaliations.c {
+    margin-left: 100px;
+}
+
+.avaliations img {
+    width: 15px;
+    height: 15px;
+}
+
+.avaliations p {
+    padding-left: 20px;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 59px;
+    padding-top: 30px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    height: 230px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    padding: 40px;
+    gap: 20px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.profile.b {
+    margin-top: 30px;
+}
+
+.profile.c {
+    margin-top: 60px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h4 {
+    color: var(--White);
+}
+
+.status {
+    color: var(--Soft-Pink);
+    flex-direction: column;
+}
+
+.comment {
+    color: var(--White);
+    line-height: 22px;
+    font-size: 15px;
+}

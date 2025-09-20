@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
